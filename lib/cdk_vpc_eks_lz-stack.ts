@@ -5,8 +5,7 @@ export class CdkVpcEksLzStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
-    const vpcCidr = '10.0.0.0/16';
+    const vpcCidr = this.node.tryGetContext("vpc.cidr");
     const vpc = new ec2.Vpc(this, 'VpcEksLandingZone', {
       cidr: vpcCidr,
    });
