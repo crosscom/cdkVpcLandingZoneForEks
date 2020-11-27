@@ -1,6 +1,7 @@
-# This is to create a LandingZone for EKS!
+# This is to create a LandingZone for EKS (VPC and networking resources)!
 
 You can create a VPC with public subnets, private subnets, route tables (associated to each subnet) and IGW, VGW, and NAT-GWs.
+After creating this, you have to create an EKS cluster inside of the VPC. 
 
 ## HOWTO
 
