@@ -5,6 +5,7 @@
     "aws-cdk:enableDiffNoFail": "true",
     "@aws-cdk/core:stackRelativeExports": "true",
     "@aws-cdk/aws-ecr-assets:dockerIgnoreSupport": true,
-    "vpc.cidr": "10.0.0.0/16"
+    "vpc.cidr": "10.0.0.0/16",
+    "vpc.maxaz": "3"
   }
 }
