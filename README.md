@@ -1,14 +1,11 @@
-# Welcome to your CDK TypeScript project!
+# This is to create a LandingZone for EKS!
 
-This is a blank project for TypeScript development with CDK.
+You can create a VPC with public subnets, private subnets, route tables (associated to each subnet) and IGW, VGW, and NAT-GWs.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## HOWTO
 
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `npm install`   install CDK packages
+ * `cdk bootstrap`
  * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+
