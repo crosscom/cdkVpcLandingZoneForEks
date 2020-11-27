@@ -6,8 +6,10 @@ export class CdkVpcEksLzStack extends cdk.Stack {
     super(scope, id, props);
 
     const vpcCidr = this.node.tryGetContext("vpc.cidr");
+    const vpcMaxAz = this.node.tryGetContext("vpc.maxaz");
     const vpc = new ec2.Vpc(this, 'VpcEksLandingZone', {
       cidr: vpcCidr,
+      maxAzs: vpcMaxAz,
    });
 
    const securityGroup = new ec2.SecurityGroup(this, 'VPCEndpointSecurityGroup', {
